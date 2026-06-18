@@ -10,7 +10,6 @@ import ContactCTA from "@/components/Contacts";
 export default function Home() {
   return (
     <main className="bg-white text-gray-900">
-      <Navbar />
       <Hero />
       <Services />
       <Packages />

@@ -2,9 +2,21 @@
 
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+
+const links = [
+  {href: "/" , text: "Home"},
+  {href: "/#service" , text: "Services"},
+  {href: "/packages", text: "Packages"},
+  {href: "/#rentals", text: "Rentals"},
+  {href: "/#contact", text: "Contact"},
+  {href: "/about", text: "About"}
+]
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const pathname = usePathname()
 
   return (
     <header className="sticky top-0 bg-white/0 backdrop-blur border-b z-50">
@@ -19,18 +31,9 @@ export default function Navbar() {
 
        
         <nav className="hidden md:flex gap-6 text-sm">
-          <a href="#services" className="hover:text-pink-400 transition-colors">
-            Services
-          </a>
-          <a href="#packages" className="hover:text-pink-400 transition-colors">
-            Packages
-          </a>
-          <a href="#rentals" className="hover:text-pink-400 transition-colors">
-            Rentals
-          </a>
-          <a href="#contact" className="hover:text-pink-400 transition-colors">
-            Contact
-          </a>
+          {links.map((link , index) => (
+            <Link className={pathname == link.href ? "text-orange-400" : "text-black"} href={link.href} key={index}>{link.text}</Link>
+          ))}
         </nav>
 
        
