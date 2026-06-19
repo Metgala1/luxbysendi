@@ -9,9 +9,9 @@ export default function AddOns() {
         </h2>
 
         <div className="mt-12 grid md:grid-cols-3 gap-6">
-          {addOns.map((item) => (
+          {addOns.map((item, index) => (
             <div
-              key={item}
+              key={item + index}
               className="border border-white/20 rounded-2xl p-6"
             >
               {item}

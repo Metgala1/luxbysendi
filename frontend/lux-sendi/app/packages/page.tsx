@@ -6,6 +6,11 @@ import AddOns from "@/components/packages/AddOns";
 import FAQ from "@/components/packages/FAQ";
 import CTA from "@/components/packages/CTA";
 import { packages } from "@/lib/data/packages";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "Packages"
+}
 
 export default function PackagesPage() {
   return (
