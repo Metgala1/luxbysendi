@@ -1,6 +1,6 @@
 export default function Hero() {
   return (
-    <section className="h-[80vh] flex items-center justify-center text-center bg-linear-to-br from-pink-50 to-purple-100">
+    <section  className="h-[80vh] flex items-center justify-center text-center bg-linear-to-br from-pink-50 to-purple-100">
       <div className="max-w-2xl">
         <h1 className="text-5xl font-bold leading-tight">
           Creating Unforgettable Moments <br /> with Style and Elegance.
