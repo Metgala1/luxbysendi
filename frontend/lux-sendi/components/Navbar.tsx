@@ -7,11 +7,11 @@ import { usePathname } from "next/navigation";
 
 const links = [
   {href: "/" , text: "Home"},
-  //{href: "/#service" , text: "Services"},
+  {href: "/service" , text: "Services"},
   {href: "/packages", text: "Packages"},
-  //{href: "/#rentals", text: "Rentals"},
-  //{href: "/#contact", text: "Contact"},
-  {href: "/about", text: "About"}
+  {href: "/theme", text: "Themes"},
+  {href: "/gallery", text: "Gallery"},
+  {href: "/about-us", text: "About Us"}
 ]
 
 export default function Navbar() {
@@ -32,7 +32,7 @@ export default function Navbar() {
        
         <nav className="hidden md:flex gap-6 text-sm">
           {links.map((link , index) => (
-            <Link className={pathname == link.href ? "text-orange-400" : "text-black"} href={link.href} key={index}>{link.text}</Link>
+            <Link className={pathname == link.href ? "text-orange-400 border-b-orange-500" : "text-black"} href={link.href} key={index}>{link.text}</Link>
           ))}
         </nav>
 
