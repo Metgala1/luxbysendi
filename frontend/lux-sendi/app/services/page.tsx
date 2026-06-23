@@ -9,10 +9,10 @@ import { packages } from "@/lib/data/packages";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: "Packages"
+    title: "Services"
 }
 
-export default function PackagesPage() {
+export default function ServicesPage() {
   return (
     <>
       <Hero />
@@ -21,7 +21,7 @@ export default function PackagesPage() {
 
       {packages.map((pkg, index) => (
         <PackageSection
-          key={pkg.name}
+          key={index}
           title={pkg.name}
           description={pkg.description}
           features={pkg.features}

@@ -34,8 +34,8 @@ export default function PackageSection({
           </p>
 
           <ul className="mt-8 space-y-4">
-            {features.map((feature) => (
-              <li key={feature}>✓ {feature}</li>
+            {features.map((feature , index) => (
+              <li key={index}>✓ {feature}</li>
             ))}
           </ul>
 

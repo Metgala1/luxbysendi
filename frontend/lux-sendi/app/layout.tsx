@@ -18,7 +18,7 @@ export const metadata: Metadata = {
      template: "%s | Lux By Sendi",
      default: "Lux By Sendi"
   },
-  description: "Premium balloon décor, event styling & luxury setups for unforgettable moments.",
+  description: "Professional event décor services for weddings, birthdays, surprise proposals, gift setups, and themed celebrations. Elegant styling, creative designs, and luxury event transformations.",
 };
 
 export default function RootLayout({
