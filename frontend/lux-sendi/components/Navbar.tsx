@@ -23,7 +23,7 @@ export default function Navbar() {
       <div className="max-w-6xl mx-auto flex justify-between items-center p-4">
         <h1 className="font-bold text-xl">
           Lux{" "}
-          <span className="text-2xl font-extrabold hover:animate-pulse text-pink-400 italic">
+          <span className="text-2xl font-extrabold animate-pulse text-pink-400 italic">
             By
           </span>{" "}
           Sendi

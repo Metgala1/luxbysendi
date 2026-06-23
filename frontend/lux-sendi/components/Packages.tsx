@@ -45,7 +45,7 @@ export default function Packages() {
               </p>
 
               <button className="mt-8 inline-flex items-center rounded-full bg-white px-5 py-2.5 text-sm font-semibold text-gray-900 transition hover:bg-white/90">
-                Learn More
+                Book Now
               </button>
             </div>
           ))}
