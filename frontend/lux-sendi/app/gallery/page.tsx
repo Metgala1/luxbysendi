@@ -11,42 +11,42 @@ const galleryItems = [
   {
     title: "Luxury Wedding Setup",
     category: "Weddings",
-    image: "/gallery/wedding-1.jpg",
+    image: "/dinner.jpeg",
   },
   {
     title: "Birthday Celebration",
     category: "Birthdays",
-    image: "/gallery/birthday-1.jpg",
+    image: "/dinner.jpeg",
   },
   {
     title: "Romantic Surprise Setup",
     category: "Surprises",
-    image: "/gallery/surprise-1.jpg",
+    image: "/dinner.jpeg",
   },
   {
     title: "Bridal Shower Elegance",
     category: "Bridal Showers",
-    image: "/gallery/bridal-1.jpg",
+    image: "/dinner.jpeg",
   },
   {
     title: "Baby Shower Theme",
     category: "Baby Showers",
-    image: "/gallery/baby-1.jpg",
+    image: "/dinner.jpeg",
   },
   {
     title: "Luxury Picnic Experience",
     category: "Picnics",
-    image: "/gallery/picnic-1.jpg",
+    image: "/dinner.jpeg",
   },
   {
     title: "Money Bouquet Creation",
     category: "Gifting",
-    image: "/gallery/money-1.jpg",
+    image: "/dinner.jpeg",
   },
   {
     title: "Anniversary Setup",
     category: "Anniversaries",
-    image: "/gallery/anniversary-1.jpg",
+    image: "/dinner.jpeg",
   },
 ];
 
@@ -75,7 +75,7 @@ export default function GalleryPage() {
     {galleryItems.map((item, index) => (
       <div
         key={index}
-        className="group overflow-hidden rounded-3xl border bg-white shadow-sm hover:shadow-xl transition"
+        className="group overflow-hidden rounded-3xl   bg-white shadow-sm hover:shadow-2xl transition"
       >
         <div className="relative h-80 w-full overflow-hidden">
           <Image
