@@ -9,7 +9,7 @@ export const metadata = {
 
 export default function ComingSoonPage() {
   return (
-    <main className="min-h-screen flex items-center justify-center px-6 bg-gradient-to-br from-amber-50 via-white to-orange-50">
+    <main className="min-h-screen flex items-center justify-center px-6 bg-linear-to-br from-amber-50 via-white to-orange-50">
       <div className="max-w-2xl text-center">
         <div className="mx-auto w-20 h-20 rounded-full bg-amber-100 flex items-center justify-center">
           <Clock3 className="text-amber-600" size={40} />

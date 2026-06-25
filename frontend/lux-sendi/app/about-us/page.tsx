@@ -92,7 +92,7 @@ export default function AboutPage() {
             </div>
           </div>
 
-          <div className="bg-gradient-to-br from-amber-50 to-orange-100 rounded-3xl p-10">
+          <div className="bg-linear-to-br from-amber-50 to-orange-100 rounded-3xl p-10">
             <h3 className="text-2xl font-bold text-gray-900">
               What We Specialize In
             </h3>
