@@ -5,7 +5,7 @@ import ContactForm from "@/components/contact/ContactForm";
 import CTA from "@/components/contact/CTA";
 
 export const metadata = {
-  title: "Contact Us | Lux by Sendi",
+  title: "Contact Us ",
   description:
     "Contact Lux by Sendi for luxury event decorations, weddings, birthdays, surprise setups, picnic experiences, money bouquets, and bespoke celebrations.",
 };
