@@ -1,11 +1,10 @@
-import Hero from "@/components/packages/HeroSection";
-import Intro from "@/components/packages/IntroSection";
-import PackageCards from "@/components/packages/PackagesCard";
-import PackageSection from "@/components/packages/PackageSection";
-import AddOns from "@/components/packages/AddOns";
-import FAQ from "@/components/packages/FAQ";
-import CTA from "@/components/packages/CTA";
-import { packages } from "@/lib/data/packages";
+import Hero from "@/components/services/HeroSection";
+import Intro from "@/components/services/IntroSection";
+import PackageSection from "@/components/services/PackageSection";
+import AddOns from "@/components/services/AddOns";
+import FAQ from "@/components/services/FAQ";
+import CTA from "@/components/services/CTA";
+import { services } from "@/lib/data/packages";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -17,9 +16,8 @@ export default function ServicesPage() {
     <>
       <Hero />
       <Intro />
-      <PackageCards />
 
-      {packages.map((pkg, index) => (
+      {services.map((pkg, index) => (
         <PackageSection
           key={index}
           title={pkg.name}

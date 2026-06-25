@@ -1,3 +1,4 @@
+import Image from "next/image";
 interface PackageSectionProps {
   title: string;
   description: string;
@@ -19,9 +20,9 @@ export default function PackageSection({
         }`}
       >
         <div>
-          <div className="h-[500] rounded-3xl bg-neutral-200 flex items-center justify-center">
-            Image Placeholder
-          </div>
+          <Image src={"/dinner.jpeg"} width={800} height={500} alt="Service image" className="h-[500] rounded-3xl bg-neutral-200 flex items-center justify-center">
+            
+          </Image>
         </div>
 
         <div>

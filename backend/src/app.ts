@@ -23,6 +23,18 @@ app.use(express.json());
 app.get('/', (req, res) => {
   res.send('Backend server running smoothly!');
 });
+
+app.get("/api/services")
+app.get("/api/services/:slug")
+app.get("/api/inquiries")
+app.get("api/auth/login")
+
+app.post("api/services")
+app.patch("api/services/:id")
+app.delete("Services/:id")
+app.post("api/gallery")
+app.delete("/api/gallery/:id")
+
 app.get('/user', (req, res) => {
     const user:User = {
         name: "Roger",
