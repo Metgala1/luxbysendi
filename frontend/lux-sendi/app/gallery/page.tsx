@@ -53,7 +53,7 @@ const galleryItems = [
 export default function GalleryPage() {
     return (
         <>
-    <section className="py-28 px-6 bg-gradient-to-b from-amber-50 to-white">
+    <section className="py-28 px-6 bg-linear-to-b from-amber-50 to-white">
   <div className="max-w-5xl mx-auto text-center">
     <span className="uppercase tracking-[0.3em] text-sm font-semibold text-amber-600">
       Our Gallery
