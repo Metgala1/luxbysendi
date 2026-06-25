@@ -4,7 +4,7 @@ import PackageSection from "@/components/services/PackageSection";
 import AddOns from "@/components/services/AddOns";
 import FAQ from "@/components/services/FAQ";
 import CTA from "@/components/services/CTA";
-import { services } from "@/lib/data/packages";
+import { services } from "@/lib/data/services";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
