@@ -1,4 +1,4 @@
-import { addOns } from "@/lib/data/packages";
+import { addOns } from "@/lib/data/services";
 
 export default function AddOns() {
   return (
