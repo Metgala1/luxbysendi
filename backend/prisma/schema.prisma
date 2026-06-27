@@ -1,67 +1,37 @@
-// This is your Prisma schema file,
-// learn more about it in the docs: https://pris.ly/d/prisma-schema
-
-// Get a free hosted Postgres database in seconds: `npx create-db`
-
 generator client {
   provider = "prisma-client"
-  output   = "../src/generated/prisma"
+  output   = "../generated/prisma"
 }
 
 datasource db {
   provider = "postgresql"
 }
 
-model Admin {
-  id            Int      @id @default(autoincrement())
-  email         String   @unique
-  password_hash String
-  created_at    DateTime @default(now())
-
-  @@map("admins")
+model Service {
+  id           String         @id
+  name         String
+  subtitle     String
+  description  String
+  features     String[]
+  createdAt    DateTime       @default(now())
+  updatedAt    DateTime
+  ServiceImage ServiceImage[]
 }
 
-model Service {
-  id          Int       @id @default(autoincrement())
-  title       String
-  slug        String    @unique
+model ServiceImage {
+  id        String   @id
+  url       String
+  serviceId String
+  createdAt DateTime @default(now())
+  Service   Service  @relation(fields: [serviceId], references: [id], onDelete: Cascade)
+}
+
+model Theme {
+  id          String   @id
+  name        String
   category    String
   description String
-  cover_image String
-  created_at  DateTime  @default(now())
-  updated_at  DateTime  @updatedAt
-
-  gallery     Gallery[]
-
-  @@map("services")
-}
-
-model Gallery {
-  id         Int          @id @default(autoincrement())
-  service_id Int
-  media_url  String
-  media_type MediaType
-  caption    String?
-  created_at DateTime     @default(now())
-
-  service    Service      @relation(fields: [service_id], references: [id], onDelete: Cascade)
-
-  @@map("gallery")
-}
-
-model Inquiry {
-  id         Int      @id @default(autoincrement())
-  name       String
-  email      String
-  phone      String
-  service    String
-  message    String
-  created_at DateTime @default(now())
-
-  @@map("inquiries")
-}
-
-enum MediaType {
-  image
-  video
+  image       String
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime
 }
