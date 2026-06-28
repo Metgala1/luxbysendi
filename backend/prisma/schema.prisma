@@ -7,31 +7,3 @@ datasource db {
   provider = "postgresql"
 }
 
-model Service {
-  id           String         @id
-  name         String
-  subtitle     String
-  description  String
-  features     String[]
-  createdAt    DateTime       @default(now())
-  updatedAt    DateTime
-  ServiceImage ServiceImage[]
-}
-
-model ServiceImage {
-  id        String   @id
-  url       String
-  serviceId String
-  createdAt DateTime @default(now())
-  Service   Service  @relation(fields: [serviceId], references: [id], onDelete: Cascade)
-}
-
-model Theme {
-  id          String   @id
-  name        String
-  category    String
-  description String
-  image       String
-  createdAt   DateTime @default(now())
-  updatedAt   DateTime
-}

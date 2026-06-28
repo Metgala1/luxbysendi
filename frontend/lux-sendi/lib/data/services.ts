@@ -20,7 +20,7 @@ features: [
 "Kids & Adult Birthday Themes",
 "Balloon Styling",
 "Cake Table Decoration",
-"Backdrops & Photo Areas",
+"Backdrops & Photo Areas ",
 ],
 },
 {
