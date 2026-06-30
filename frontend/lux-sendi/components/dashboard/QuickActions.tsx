@@ -2,8 +2,7 @@ const actions = [
   "Create Event",
   "Upload Gallery",
   "Add Theme",
-  "Create Invoice",
-  "View Calendar",
+  
 ];
 
 export default function QuickActions() {

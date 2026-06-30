@@ -17,7 +17,9 @@ const links = [
 
 export default function DashboardLayout({
   children,
-}: DashboardLayoutProps) {
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
   return (
     <div className="min-h-screen bg-[#F8F8F6] flex">
 

@@ -11,7 +11,8 @@ const links = [
   { href: "/contact", text: "Contact" },
   { href: "/theme", text: "Themes" },
   { href: "/gallery", text: "Gallery" },
-  { href: "/about-us", text: "About Us" }
+  { href: "/about-us", text: "About Us" },
+  {href: "/dashboard" , text: "Dashbaord"}
 ];
 
 export default function Navbar() {

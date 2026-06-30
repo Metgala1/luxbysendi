@@ -1,15 +1,21 @@
+import { url } from "inspector";
+import Image from "next/image";
+
 const themes = [
   {
-    name: "Royal Gold",
+    name: "Theme Barbie",
     bookings: 42,
+    url: "/themebarbie2.jpeg"
   },
   {
-    name: "Black Luxury",
+    name: "Theme Purple",
     bookings: 36,
+    url: "/themepurple2.jpeg"
   },
   {
-    name: "White Elegance",
+    name: "The Reunion",
     bookings: 29,
+    url: "/themereunion1.jpeg"
   },
 ];
 
@@ -31,14 +37,14 @@ export default function PopularThemes() {
 
       <div className="space-y-5">
 
-        {themes.map((theme) => (
+        {themes.map((theme ) => (
 
           <div
             key={theme.name}
-            className="flex gap-5 rounded-2xl border p-4 hover:shadow-md transition"
+            className="flex gap-5 rounded-2xl  p-4 hover:shadow-md transition"
           >
 
-            <div className="h-24 w-24 rounded-xl bg-linear-to-br from-black to-[#D4AF37]" />
+            <Image src={theme.url} width={100} height={100} alt={theme.name} className="rounded-xl" ></Image>
 
             <div className="flex flex-col justify-center">
 
@@ -50,7 +56,7 @@ export default function PopularThemes() {
                 {theme.bookings} bookings
               </p>
 
-            </div>
+            </div> 
 
           </div>
 
